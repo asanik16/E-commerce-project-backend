@@ -46,7 +46,7 @@ app.delete('/delete-product/:id', async (req, res) => {
     res.send(output);
 });
 
-const port = process.env.port || 3010;
+const port = process.env.PORT || 3010;
 mongoose.connect(process.env.mongoURL, () => {
     console.log('database e aslam');
     app.listen(port, () => {
